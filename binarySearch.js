@@ -8,9 +8,9 @@ const binarySearch = (arr, target) => {
     if (guess === target) {
       return mid;
     } else if (guess > target) {
-      return (high = mid - 1);
+      high = mid - 1;
     } else {
-      return (low = mid + 1);
+      low = mid + 1;
     }
   }
   return -1;
